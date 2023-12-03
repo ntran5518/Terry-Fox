@@ -1,0 +1,238 @@
+/* Nini Tran */
+/* 8855518 */
+
+html {
+  font: normal normal normal 20px/1.5 Verdana, Arial, sans-serif;
+}
+
+h1 {
+  color: blueviolet;
+  font-size: 2rem;
+}
+
+h2 {
+  color: rgb(0, 102, 255);
+  font-size: 1.5rem;
+}
+aside ul {
+  list-style-type: square;
+}
+
+aside li {
+  color: rgb(0, 102, 255);
+  line-height: 2em;
+}
+
+aside a {
+  color: rgb(31, 51, 167);
+}
+
+nav {
+  padding: 10px;
+  flex: 15%;
+}
+
+nav ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: indigo;
+  border: 0.1em solid indigo;
+  columns: indigo;
+  background-color: cornsilk;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav ul li a:hover {
+  border-color: cornsilk;
+  color: cornsilk;
+  background-color: indigo;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsla(278, 36%, 86%, 0.1);
+  font: normal normal normal normal 12px/1.5 Verdana, Arial, Helvetica,
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  flex: 1 10%;
+}
+
+main[class="structural"] {
+  flex: 2 1 70%;
+  font-size: 1rem;
+  border: 5px solid rgb(34, 107, 190);
+  background-color: hsl(50, 87%, 65%);
+}
+
+aside {
+  background-image: url("https://i.cbc.ca/1.6840925.1683857098!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/terry-fox-statue-port-coquitlam.jpg");
+  background-size: cover;
+  background-position: center;
+
+  flex: 1 1 30%;
+  border: 5px solid blue;
+}
+
+aside a:hover::before {
+  display: inline-block;
+  background-color: hsl(234, 87%, 65%);
+}
+
+aside a:hover {
+  color: hsl(51, 87%, 65%);
+}
+
+.structural {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+footer {
+  flex: 15%;
+  font-size: 0.75cm;
+  background: linear-gradient(to right, #4caf50, #2196f3);
+}
+
+footer p {
+  font-size: 0.8em;
+}
+
+aside a:hover {
+  color: hsl(59, 91%, 31%);
+}
+
+form {
+  border: 5px dashed rgb(65, 114, 248);
+  padding: 5px;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+select,
+option {
+  display: block;
+  width: 50%;
+  height: 2em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 2em;
+  height: 2em;
+}
+nav a,
+select,
+input[type="submit"],
+option,
+label,
+legend,
+select > option,
+nav a {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+textarea {
+  width: 50%;
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-gap: 01rem;
+  column-gap: 01rem;
+}
+#gallery img {
+  width: 100%;
+  height: 60%;
+  display: block;
+}
+
+figure {
+  border: 0.1em solid #ccc;
+}
+
+figcaption {
+  text-align: left;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+
+  section {
+    display: block;
+  }
+}
+img.TerryFox {
+  margin-bottom: 0;
+  shape-outside: square();
+  width: 36vw;
+  float: left;
+  margin: 1em;
+  margin-bottom: 1em;
+}
+
+img {
+  width: 100%;
+  height: 80%;
+  max-width: 100%;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.clip-art {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+}
+nav li {
+  margin-right: 20px;
+  position: relative;
+}
+.container {
+  width: 750px;
+  height: 500px;
+}
